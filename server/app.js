@@ -4,11 +4,10 @@ import path from 'path';
 
 const app = express();
 	
-app.get('/*', (req, res) => {
+app.get('*', (req, res) => {
   let indexPath = path.join(__dirname, '../index.html');
   res.sendFile(indexPath);
 });
-
 
 
 //SERVER LISTEN
