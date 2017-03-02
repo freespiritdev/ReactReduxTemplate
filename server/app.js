@@ -9,7 +9,6 @@ app.get('*', (req, res) => {
   res.sendFile(indexPath);
 });
 
-
 //SERVER LISTEN
 app.listen(PORT, err => {
   if(err) throw err;
