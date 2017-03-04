@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Welcome from './Welcome';
 
 export default class Layout extends Component {
   render() {
     return (
-      <h1 className="text-center">Welcome!</h1>
+    	<Welcome/>
     )
   }
 }
