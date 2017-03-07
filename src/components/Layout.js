@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Welcome from './Welcome';
+import NavBar from './NavBar';
+
 
 export default class Layout extends Component {
   render() {
     return (
-    	<Welcome/>
+    	<div>
+    		<NavBar/>
+    	</div>
+    
     )
   }
 }
