@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import Welcome from './Welcome';
 
 export default class NavBar extends Component {
@@ -18,8 +18,8 @@ export default class NavBar extends Component {
 
 	          		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	            		<ul className="nav navbar-nav navbar-right">
-	              			<li>Home</li>
-		       				<li>About</li>
+	              			<li><a href="#">Home</a></li>
+		       				<li><a href="#">Sign up</a></li>
 	            		</ul>
 	          		</div>
 	        	</div>
