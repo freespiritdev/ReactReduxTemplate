@@ -7,6 +7,7 @@ export default class Layout extends Component {
     return (
     	<div>
     		<NavBar/>
+    		{this.props.children}
     	</div>
     
     )
