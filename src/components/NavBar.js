@@ -1,5 +1,5 @@
- import React, { Component } from 'react';
-import Welcome from './Welcome';
+import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class NavBar extends Component {
   render() {
@@ -18,8 +18,8 @@ export default class NavBar extends Component {
 
 	          		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	            		<ul className="nav navbar-nav navbar-right">
-	              			<li><a href="#">Home</a></li>
-		       				<li><a href="#">Sign up</a></li>
+	              			<li><Link to="/">Home</Link></li>
+		       				<li><Link to="/register">Register</Link></li>
 	            		</ul>
 	          		</div>
 	        	</div>
