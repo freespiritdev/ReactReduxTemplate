@@ -12,6 +12,11 @@ export default class RegisterForm extends Component {
 						type="text"
 						name="username"
 					/>
+					<label>Password</label>
+					<input
+						type="text"
+						name="password"
+					/>
 				</div>
 				<div>
 					<button className="btn btn-primary">
