@@ -8,6 +8,15 @@ export default class RegisterForm extends Component {
 
 				<div>
 					<label>Username</label>
+					<input
+						type="text"
+						name="username"
+					/>
+				</div>
+				<div>
+					<button className="btn btn-primary">
+					Sign up
+					</button>
 				</div>
 			</form>
 		);
