@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
 export default class RegisterForm extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			username: ''
+		}
+
+		this.onChange = this.onChange.bind(this);
+	}
+
+	onChange(e){
+		this.setState({ [e.target.name]: e.target.value});
+	}
+
 	render(){
 		return (
 			<form>
@@ -9,6 +22,8 @@ export default class RegisterForm extends Component {
 				<div>
 					<label>Username</label>
 					<input
+						value={this.state.username}
+						onChange={this.onChange}
 						type="text"
 						name="username"
 					/>
