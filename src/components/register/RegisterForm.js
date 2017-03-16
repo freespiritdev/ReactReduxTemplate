@@ -4,7 +4,10 @@ export default class RegisterForm extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			username: ''
+			username: '',
+			email: '',
+			password1: '',
+			password2: ''
 		}
 
 		this.onChange = this.onChange.bind(this);
@@ -18,7 +21,6 @@ export default class RegisterForm extends Component {
 		return (
 			<form>
 				<h1>Join Us!</h1>
-
 				<div>
 					<label>Username</label>
 					<input
@@ -26,6 +28,13 @@ export default class RegisterForm extends Component {
 						onChange={this.onChange}
 						type="text"
 						name="username"
+					/>
+					<label>Email</label>
+					<input
+						value={this.state.email}
+						onChange={this.onChange}
+						type="text"
+						name="email"
 					/>
 					<label>Password</label>
 					<input
