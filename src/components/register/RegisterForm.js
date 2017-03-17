@@ -39,7 +39,12 @@ export default class RegisterForm extends Component {
 					<label>Password</label>
 					<input
 						type="text"
-						name="password"
+						name="password1"
+					/>
+					<label>Confirm Password</label>
+					<input
+						type="text"
+						name="password2"
 					/>
 				</div>
 				<div>
