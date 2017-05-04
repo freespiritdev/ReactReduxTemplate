@@ -35,7 +35,6 @@ export default class RegisterForm extends Component {
 		let { username, email, password1, password2 } = this.state;
 		return (
 			<form onSubmit={this._submit}>
-				<h1>Join Us!</h1>
 				<div>
 					<label>Username</label>
 					<input
